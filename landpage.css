@@ -28,6 +28,7 @@ main{
 } main > section{
     display: flex;
     align-items: center;
+
 } main > section > article{
     width: 500px;
     text-align: center;
