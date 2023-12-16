@@ -58,8 +58,23 @@ main{height: 100%; display: flex; align-items: center;}
     align-items: center;
 }
 
-/* * main yazılar başlıklar stili */
+/* * resim css kodları */
+.main_img_area{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px;
+}
 
+.main_img{
+    transition: 500ms all ease-in-out;
+    cursor: pointer;
+}
+
+.main_img:hover{
+    transform: scale(1.2);
+}
+
+/* * main yazılar başlıklar stili */
 .main_text_title{
     border-bottom: solid 1px;
     width: fit-content;
