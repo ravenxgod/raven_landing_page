@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    font-size: 20px;
+}
+
+/* * sıfırlama kodu */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * ana arka plan rengi */
+body{background-color: #393939; height: 100vh;}
+
+/* * yazı renkleri ve fontları */
+h1, h2, h3, h4, h5, h6, a, p, img, li, ul{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #D9D9D9;
+}
+
+/* * nav bölümü */
+.navbar{
+    background-color: #2D2D2D;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+} .navbar_links{
+    display: flex;
+    gap: 20px;
+} 
+.page_logo{width: 50px;}
+
+/* * main bölümü */
+main{height: 100%; display: flex; align-items: center;}
+
+.main_content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+} .main_text_area{
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+/* * resim css kodları */
+.main_img_area{
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.main_img{
+    transition: 500ms all ease-in-out;
+    cursor: pointer;
+}
+
+.main_img:hover{
+    transform: scale(1.2);
+}
+
+/* * main yazılar başlıklar stili */
+.main_text_title{
+    border-bottom: solid 1px;
+    width: fit-content;
+    padding-bottom: 2px;
+    font-size: 40px;
+} 
+
+.main_text_sub-title{
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.main_text_sub-title-explain{
+    font-size: 15px;
+    opacity: 0.5;
+}
